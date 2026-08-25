@@ -44,17 +44,6 @@ Qudian is an independent theme project. It is not affiliated with, endorsed by, 
 3. In VS Code or Cursor, run **Extensions: Install from VSIX…** and select the generated `.vsix` file.
 4. Select **Qudian** as your color theme.
 
-## Migrating from an older local theme
-
-If you previously used a local extension named **Caves of Qud**, update your editor settings after installing Qudian:
-
-- Change `workbench.colorTheme` from `"Caves of Qud"` to `"Qudian"`.
-- If you use `workbench.colorCustomizations`, rename the theme key from `"[Caves of Qud]"` to `"[Qudian]"`.
-
-In Cursor, these settings live in:
-
-`~/Library/Application Support/Cursor/User/settings.json`
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
