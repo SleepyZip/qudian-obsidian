@@ -4,6 +4,9 @@ Dark teal editor and terminal color themes.
 
 Qudian is an independent theme project. It is not affiliated with, endorsed by, or connected to any game or trademark holder.
 
+<img width="1279" height="799" alt="Screenshot 2026-08-25 at 3 33 35 PM" src="https://github.com/user-attachments/assets/3cb1ada0-3982-4dfc-88c1-2ae5d77e2f0e" />
+
+
 ## Contents
 
 - `terminal/` — macOS Terminal profile
