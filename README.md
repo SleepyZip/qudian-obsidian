@@ -1,0 +1,60 @@
+# Qudian
+
+Dark teal editor and terminal color themes.
+
+Qudian is an independent theme project. It is not affiliated with, endorsed by, or connected to any game or trademark holder.
+
+## Contents
+
+- `terminal/` — macOS Terminal profile
+- `vscode/` — VS Code / Cursor color theme extension
+
+## Terminal (macOS)
+
+1. Clone or download this repository.
+2. Open `terminal/Qudian.terminal`:
+   - **Double-click** the file to import it into Terminal, or
+   - In Terminal, go to **Settings → Profiles → … → Import…** and select `Qudian.terminal`.
+3. Set **Qudian** as your default profile if you want it applied to new windows.
+
+## VS Code / Cursor
+
+### Install from source
+
+1. Clone this repository.
+2. In VS Code or Cursor, open the Command Palette and run **Extensions: Install Extension from Location…**
+3. Select the `vscode/` folder inside this repo.
+4. Open the Command Palette and run **Preferences: Color Theme**, then choose **Qudian**.
+
+### Install from a VSIX (optional)
+
+1. Install the packaging tool:
+
+   ```bash
+   npm install -g @vscode/vsce
+   ```
+
+2. Build the extension:
+
+   ```bash
+   cd vscode
+   vsce package
+   ```
+
+3. In VS Code or Cursor, run **Extensions: Install from VSIX…** and select the generated `.vsix` file.
+4. Select **Qudian** as your color theme.
+
+## Migrating from an older local theme
+
+If you previously used a local extension named **Caves of Qud**, update your editor settings after installing Qudian:
+
+- Change `workbench.colorTheme` from `"Caves of Qud"` to `"Qudian"`.
+- If you use `workbench.colorCustomizations`, rename the theme key from `"[Caves of Qud]"` to `"[Qudian]"`.
+
+In Cursor, these settings live in:
+
+`~/Library/Application Support/Cursor/User/settings.json`
+
+## License
+
+MIT — see [LICENSE](LICENSE).

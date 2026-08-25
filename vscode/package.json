@@ -1,0 +1,22 @@
+{
+  "name": "qudian-theme",
+  "displayName": "Qudian",
+  "description": "VS Code / Cursor dark theme — Qudian palette",
+  "version": "1.0.0",
+  "publisher": "dw",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Qudian",
+        "uiTheme": "vs-dark",
+        "path": "./themes/qudian-color-theme.json"
+      }
+    ]
+  }
+}
