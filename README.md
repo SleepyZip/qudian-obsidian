@@ -12,6 +12,26 @@ This is the Obsidian port of the Qudian theme, forked from the [original Qudian 
 - `theme.css` — Obsidian theme stylesheet
 - `Qudian Theme Demo.md` — a sample note showcasing the theme's styling
 
+## Font
+
+Qudian is designed around **Source Code Pro**. It's not bundled with this theme, so install it separately for the intended look.
+
+### Windows
+
+1. Download the family from [Google Fonts](https://fonts.google.com/specimen/Source+Code+Pro) and unzip it.
+2. Select all the `.ttf` files, right-click, and choose **Install for all users** (or just **Install**).
+
+### Linux
+
+- Fedora: `sudo dnf install adobe-source-code-pro-fonts`
+- Arch: `sudo pacman -S adobe-source-code-pro-fonts`
+- Debian/Ubuntu (no official package): download from [Google Fonts](https://fonts.google.com/specimen/Source+Code+Pro), unzip, then:
+  ```bash
+  mkdir -p ~/.local/share/fonts
+  cp *.ttf ~/.local/share/fonts/
+  fc-cache -f -v
+  ```
+
 ## Install
 
 ### From Obsidian's community themes
