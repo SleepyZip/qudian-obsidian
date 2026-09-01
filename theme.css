@@ -7,6 +7,30 @@
    gives you stock Obsidian rather than a washed-out approximation.
    ========================================================================= */
 
+/* @settings
+
+name: Qudian
+id: qudian
+settings:
+    -
+        id: qudian-scanlines
+        title: Scanlines
+        description: Overlay a subtle CRT scanline effect, like cavesofqud.com
+        type: class-toggle
+        default: false
+    -
+        id: qudian-scanline-opacity
+        title: Scanline opacity
+        description: How visible the scanlines are (requires Scanlines enabled)
+        type: variable-number-slider
+        default: 6
+        min: 1
+        max: 25
+        step: 1
+        format: '%'
+
+*/
+
 .theme-dark {
   /* --- Qudian palette ------------------------------------------------- */
   --qd-bg:            #0f3b3a;  /* editor.background                      */
@@ -196,3 +220,22 @@
 /* --- Active line and selection ----------------------------------------- */
 .theme-dark .cm-active.cm-line { background-color: #174646aa; }
 .theme-dark ::selection        { background-color: #265c5ecc; }
+
+/* --- Scanlines (opt-in via Style Settings) ------------------------------
+   Requires the "Style Settings" community plugin to expose the toggle and
+   opacity slider. Without it, this stays permanently off. */
+.theme-dark.qudian-scanlines .app-container::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, var(--qudian-scanline-opacity, 6%)) 0px,
+    rgba(0, 0, 0, var(--qudian-scanline-opacity, 6%)) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  mix-blend-mode: multiply;
+}
