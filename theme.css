@@ -1,0 +1,198 @@
+/* ============================================================================
+   Qudian for Obsidian
+   Ported from the Qudian VS Code theme by dwwr - https://github.com/dwwr/qudian
+   Upstream is MIT licensed; this port carries the same terms.
+
+   Dark only. Obsidian's light mode is left untouched, so toggling to light
+   gives you stock Obsidian rather than a washed-out approximation.
+   ========================================================================= */
+
+.theme-dark {
+  /* --- Qudian palette ------------------------------------------------- */
+  --qd-bg:            #0f3b3a;  /* editor.background                      */
+  --qd-surface:       #265c5e;  /* selection / button / border            */
+  --qd-fg:            #b1c9c3;  /* editor.foreground                      */
+  --qd-green:         #00c420;  /* editorCursor / badge                   */
+  --qd-green-dim:     #009403;  /* terminal.ansiGreen                     */
+  --qd-red:           #a64a2e;  /* terminal.ansiRed                       */
+  --qd-orange:        #d74200;  /* errorForeground                        */
+  --qd-yellow:        #cfc041;  /* editorWarning.foreground               */
+  --qd-yellow-dim:    #cfc041;  /* disabledForeground                     */
+  --qd-gold:          #c79e4d;  /* keyword / storage                      */
+  --qd-blue:          #0096ff;  /* textLink.foreground                    */
+  --qd-blue-dim:      #0048bd;  /* terminal.ansiBlue                      */
+  --qd-blue-soft:     #5396c6;  /* entity.name.function                   */
+  --qd-cyan:          #77bfcf;  /* descriptionForeground                  */
+  --qd-cyan-dim:      #40a4b9;  /* string                                 */
+  --qd-magenta:       #da5bd6;  /* Magenta (bright, canon) - was #b154cf   */
+  --qd-magenta-soft:  #c167b9;  /* variable                               */
+  --qd-white:         #ffffff;  /* terminal.ansiBrightWhite               */
+
+  /* --- Obsidian base scale --------------------------------------------- */
+  --color-base-00: #0f3b3a;
+  --color-base-05: #134040;
+  --color-base-10: #174646;
+  --color-base-20: #1e5152;
+  --color-base-25: #225658;
+  --color-base-30: #265c5e;
+  --color-base-35: #306465;
+  --color-base-40: #3a6c6c;
+  --color-base-50: #4e7b7b;
+  --color-base-60: #628b89;
+  --color-base-70: #759a98;
+  --color-base-100: #b1c9c3;
+
+  /* --- Accent (drives links and interactive states) --------------------- */
+  --accent-h: 205;
+  --accent-s: 100%;
+  --accent-l: 50%;
+
+  /* --- Named colours (callouts, graph, syntax fallbacks) ---------------- */
+  --color-red:    var(--qd-orange);
+  --color-orange: var(--qd-gold);
+  --color-yellow: var(--qd-yellow);
+  --color-green:  var(--qd-green);
+  --color-cyan:   var(--qd-cyan);
+  --color-blue:   var(--qd-blue);
+  --color-purple: var(--qd-magenta);
+  --color-pink:   var(--qd-magenta-soft);
+
+  /* --- RGB triplets (Obsidian callouts use rgba(var(--color-x-rgb), a)) - */
+  --color-red-rgb:    215, 66, 0;
+  --color-orange-rgb: 199, 158, 77;
+  --color-yellow-rgb: 207, 192, 65;
+  --color-green-rgb:  0, 196, 32;
+  --color-cyan-rgb:   119, 191, 207;
+  --color-blue-rgb:   0, 150, 255;
+  --color-purple-rgb: 218, 91, 214;
+  --color-pink-rgb:   193, 103, 185;
+
+  /* --- Text ------------------------------------------------------------- */
+  --text-normal:      var(--qd-fg);
+  --text-muted:       var(--qd-cyan);
+  --text-faint:       var(--qd-yellow-dim);
+  --text-on-accent:   var(--qd-bg);
+  --text-error:       var(--qd-orange);
+  --text-warning:     var(--qd-yellow);
+  --text-success:     var(--qd-green);
+  --text-selection:   #265c5ecc;
+  --text-highlight-bg:#cfc04155;
+  --caret-color:      var(--qd-green);
+  --bold-color:       var(--qd-white);
+  --italic-color:     var(--qd-cyan);
+
+  /* --- Links ------------------------------------------------------------ */
+  --link-color:            var(--qd-blue);
+  --link-color-hover:      var(--qd-cyan);
+  --link-external-color:   var(--qd-blue);
+  --link-external-color-hover: var(--qd-cyan);
+  --link-unresolved-color: var(--qd-yellow-dim);
+  --link-unresolved-opacity: 0.8;
+
+  /* --- Surfaces --------------------------------------------------------- */
+  /* Obsidian's defaults put the sidebar ABOVE the editor in the base ramp
+     (--background-secondary -> --color-base-20), which reads as a lighter
+     panel. Qudian wants the chrome to recede, so these are set explicitly
+     below --background-primary instead of inheriting from the ramp.        */
+  --background-primary:       var(--qd-bg);
+  --background-primary-alt:   #134040;
+  --background-secondary:     #092323;
+  --background-secondary-alt: #071c1c;
+  --background-modifier-border:        var(--qd-surface);
+  --background-modifier-border-hover:  #306465;
+  --background-modifier-border-focus:  var(--qd-green);
+  --background-modifier-error:         color-mix(in srgb, var(--qd-red) 33%, transparent);
+  --background-modifier-success:       #00c42033;
+  --divider-color:                     var(--qd-surface);
+  --indentation-guide-color:           #265c5e88;
+
+  /* --- Chrome ----------------------------------------------------------- */
+  --titlebar-background:         var(--qd-bg);
+  --titlebar-background-focused: var(--qd-surface);
+  --titlebar-text-color-focused: var(--qd-fg);
+  --nav-item-color-active:       var(--qd-white);
+  --nav-item-background-active:  var(--qd-surface);
+  --icon-color-focused:          var(--qd-green);
+
+  /* --- Headings --------------------------------------------------------- */
+  --inline-title-color: var(--qd-yellow);
+  --h1-color: var(--qd-yellow);
+  --h2-color: var(--qd-cyan);
+  --h3-color: var(--qd-green);
+  --h4-color: var(--qd-magenta);
+  --h5-color: var(--qd-cyan-dim);
+  --h6-color: var(--qd-yellow-dim);
+
+  /* --- Tags, quotes, rules, tables -------------------------------------- */
+  --tag-color:            var(--qd-green);
+  --tag-background:       #00c4201f;
+  --tag-background-hover: #00c4203a;
+  --blockquote-border-color: var(--qd-cyan-dim);
+  --blockquote-color:        var(--qd-cyan);
+  --hr-color:                var(--qd-surface);
+  --table-header-background: var(--qd-surface);
+  --table-row-alt-background:#17464688;
+  --table-border-color:      var(--qd-surface);
+  --embed-border-left:       2px solid var(--qd-cyan-dim);
+
+  /* --- Scrollbars ------------------------------------------------------- */
+  --scrollbar-bg:              transparent;
+  --scrollbar-thumb-bg:        #265c5e88;
+  --scrollbar-active-thumb-bg: var(--qd-surface);
+
+  /* --- Checkboxes ------------------------------------------------------- */
+  --checkbox-color:        var(--qd-green);
+  --checkbox-color-hover:  var(--qd-green-dim);
+  --checkbox-border-color: var(--qd-surface);
+
+  /* --- Graph view ------------------------------------------------------- */
+  --graph-line:            #265c5e99;
+  --graph-node:            var(--qd-fg);
+  --graph-node-focused:    var(--qd-green);
+  --graph-node-tag:        var(--qd-yellow);
+  --graph-node-attachment: var(--qd-cyan-dim);
+  --graph-node-unresolved: var(--qd-yellow-dim);
+
+  /* --- Code ------------------------------------------------------------- */
+  /* Mapped one-to-one from the tokenColors block of the upstream theme.    */
+  --font-monospace-theme: 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace;
+  --code-background:  #0b2c2b;
+  --code-normal:      var(--qd-fg);
+  --code-comment:     var(--qd-yellow-dim);   /* comment                    */
+  --code-string:      var(--qd-cyan-dim);     /* string                     */
+  --code-value:       var(--qd-yellow);       /* constant.numeric           */
+  --code-keyword:     var(--qd-gold);         /* keyword, storage           */
+  --code-operator:    var(--qd-fg);           /* keyword.operator           */
+  --code-function:    var(--qd-blue-soft);    /* entity.name.function       */
+  --code-property:    var(--qd-magenta-soft); /* variable                   */
+  --code-tag:         var(--qd-green);        /* entity.name.tag            */
+  --code-important:   var(--qd-orange);       /* invalid                    */
+  --code-punctuation: var(--qd-fg);
+}
+
+/* --- Editor syntax: scopes Obsidian exposes through CodeMirror ---------- */
+.theme-dark .cm-comment,
+.theme-dark .token.comment { color: var(--qd-yellow-dim); font-style: italic; }
+.theme-dark .cm-string,
+.theme-dark .token.string  { color: var(--qd-cyan-dim); }
+.theme-dark .cm-number,
+.theme-dark .token.number  { color: var(--qd-yellow); }
+.theme-dark .cm-keyword,
+.theme-dark .token.keyword { color: var(--qd-gold); }
+.theme-dark .token.function{ color: var(--qd-blue-soft); }
+.theme-dark .token.class-name,
+.theme-dark .cm-type-name  { color: var(--qd-cyan); }
+.theme-dark .token.regex,
+.theme-dark .token.entity  { color: var(--qd-cyan); }
+.theme-dark .token.deleted { color: var(--qd-orange); }
+.theme-dark .token.inserted{ color: var(--qd-green); }
+
+/* --- Markdown emphasis, matching markup.* from upstream ----------------- */
+.theme-dark .cm-strong,
+.theme-dark .markdown-rendered strong { color: var(--qd-white); }
+.theme-dark .cm-em,
+.theme-dark .markdown-rendered em     { color: var(--qd-cyan); font-style: italic; }
+
+/* --- Active line and selection ----------------------------------------- */
+.theme-dark .cm-active.cm-line { background-color: #174646aa; }
+.theme-dark ::selection        { background-color: #265c5ecc; }
