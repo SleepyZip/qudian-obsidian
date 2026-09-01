@@ -22,7 +22,7 @@ An optional, subtle CRT scanline overlay. The same kind of effect you'll see in 
 
 ![Scanlines toggle and opacity slider in Style Settings](Images/scanlines-settings.png)
 
-With it enabled, notes pick up the same faint CRT texture as the game's own site:
+With it enabled, notes pick up the same faint CRT texture as the game.
 
 ![A note rendered with the scanline effect active](Images/scanlines-demo.png)
 
