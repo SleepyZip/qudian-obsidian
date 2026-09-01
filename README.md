@@ -16,11 +16,27 @@ Its look is inspired by the UI of [Caves of Qud](https://www.cavesofqud.com/), b
 
 ## Features
 
-- **Scanlines** — an optional, subtle CRT scanline overlay, like the effect on [cavesofqud.com](https://www.cavesofqud.com/). Off by default. Toggle it and adjust its opacity from **Settings → Style Settings → Qudian**, once you have the free [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin installed.
+### Scanlines
+
+An optional, subtle CRT scanline overlay — the same kind of effect you'll see on [cavesofqud.com](https://www.cavesofqud.com/) itself. Off by default, toggle and opacity (1–25%) adjustable from **Settings → Style Settings → Qudian**:
+
+![Scanlines toggle and opacity slider in Style Settings](scanlines-settings.png)
+
+With it enabled, notes pick up the same faint CRT texture as the game's own site:
+
+![A note rendered with the scanline effect active](scanlines-demo.png)
+
+## Required / Recommended Plugins
+
+| Plugin | Needed for | Required? |
+|---|---|---|
+| [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) | Toggling and adjusting Scanlines | Only if you want that feature — without it, scanlines just stay off and everything else works normally |
+
+No plugins are required to use the base theme itself.
 
 ## Font
 
-To get that much closer to CoQ's UI use this theme with the Source Code Pro font. 
+To get that much closer to CoQ's UI use this theme with the Source Code Pro font.
 
 ### Windows
 
