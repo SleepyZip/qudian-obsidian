@@ -14,6 +14,10 @@ Its look is inspired by the UI of [Caves of Qud](https://www.cavesofqud.com/), b
 - `theme.css` — Obsidian theme stylesheet
 - `Qudian Theme Demo.md` — a sample note showcasing the theme's styling
 
+## Features
+
+- **Scanlines** — an optional, subtle CRT scanline overlay, like the effect on [cavesofqud.com](https://www.cavesofqud.com/). Off by default. Toggle it and adjust its opacity from **Settings → Style Settings → Qudian**, once you have the free [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin installed.
+
 ## Font
 
 Qudian is designed around **Source Code Pro**. It's not bundled with this theme, so install it separately for the intended look.
