@@ -18,7 +18,7 @@ Its look is inspired by the UI of [Caves of Qud](https://www.cavesofqud.com/), b
 
 ### Scanlines
 
-An optional, subtle CRT scanline overlay — the same kind of effect you'll see on [cavesofqud.com](https://www.cavesofqud.com/) itself. Off by default, toggle and opacity (1–25%) adjustable from **Settings → Style Settings → Qudian**:
+An optional, subtle CRT scanline overlay. The same kind of effect you'll see in CoQ itself. Off by default, toggle and opacity (1–25%) adjustable from **Settings → Style Settings → Qudian**:
 
 ![Scanlines toggle and opacity slider in Style Settings](scanlines-settings.png)
 
