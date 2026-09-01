@@ -6,7 +6,7 @@ This is the Obsidian port of the Qudian theme, forked from the [original Qudian 
 
 Its look is inspired by the UI of [Caves of Qud](https://www.cavesofqud.com/), by Freehold Games.
 
-![Qudian Theme Demo](screenshot.png)
+![Qudian Theme Demo](Images/screenshot.png)
 
 ## Contents
 
@@ -20,11 +20,11 @@ Its look is inspired by the UI of [Caves of Qud](https://www.cavesofqud.com/), b
 
 An optional, subtle CRT scanline overlay. The same kind of effect you'll see in CoQ itself. Off by default, toggle and opacity (1–25%) adjustable from **Settings → Style Settings → Qudian**:
 
-![Scanlines toggle and opacity slider in Style Settings](scanlines-settings.png)
+![Scanlines toggle and opacity slider in Style Settings](Images/scanlines-settings.png)
 
 With it enabled, notes pick up the same faint CRT texture as the game's own site:
 
-![A note rendered with the scanline effect active](scanlines-demo.png)
+![A note rendered with the scanline effect active](Images/scanlines-demo.png)
 
 ## Required / Recommended Plugins
 
