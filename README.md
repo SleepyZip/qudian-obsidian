@@ -4,6 +4,8 @@ Qudian is an independent theme project made with love and admiration. It is not 
 
 This is the Obsidian port of the Qudian theme, forked from the [original Qudian project](https://github.com/dwwr/qudian) (terminal + VS Code).
 
+Its look is inspired by the UI of [Caves of Qud](https://www.cavesofqud.com/), by Freehold Games.
+
 ![Qudian Theme Demo](screenshot.png)
 
 ## Contents
