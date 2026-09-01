@@ -16,7 +16,7 @@ Its look is inspired by the UI of [Caves of Qud](https://www.cavesofqud.com/), b
 
 ## Font
 
-Qudian is designed around **Source Code Pro**. It's not bundled with this theme, so install it separately for the intended look.
+To get that much closer to CoQ's UI use this theme with the Source Code Pro font. 
 
 ### Windows
 
