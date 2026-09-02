@@ -26,8 +26,6 @@ Off by default, toggle and opacity adjustable from **Settings → Style Settings
 
 With it enabled, notes pick up the same faint CRT texture as the game.
 
-![A note rendered with the scanline effect active](Images/scanlines-demo.png)
-
 No plugins are required to use the base theme itself.
 
 ## Font
