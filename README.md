@@ -1,5 +1,7 @@
 # Qudian for Obsidian
 
+![Qudian](screenshot.png)
+
 Qudian is an independent theme project made with love and admiration. It is not affiliated with, endorsed by, or connected to any game or trademark holder.
 
 This is the Obsidian port of the Qudian theme, forked from the [original Qudian project](https://github.com/dwwr/qudian) (terminal + VS Code).
@@ -14,11 +16,11 @@ Its look is inspired by the UI of [Caves of Qud](https://www.cavesofqud.com/), b
 - `theme.css`: Obsidian theme stylesheet
 - `Qudian Theme Demo.md`: a sample note showcasing the theme's styling
 
-## Features
 
 ### Scanlines
 
-An optional, subtle CRT scanline overlay. The same kind of effect you'll see in CoQ itself. Off by default, toggle and opacity (1–25%) adjustable from **Settings → Style Settings → Qudian**:
+An optional, CRT scanline overlay can be added with the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin. The same kind of effect you'll see in CoQ itself. 
+Off by default, toggle and opacity adjustable from **Settings → Style Settings → Qudian**:
 
 ![Scanlines toggle and opacity slider in Style Settings](Images/scanlines-settings.png)
 
@@ -26,37 +28,23 @@ With it enabled, notes pick up the same faint CRT texture as the game.
 
 ![A note rendered with the scanline effect active](Images/scanlines-demo.png)
 
-## Required / Recommended Plugins
-
-| Plugin | Needed for | Required? |
-|---|---|---|
-| [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) | Toggling and adjusting Scanlines | Only if you want that feature; without it, scanlines just stay off and everything else works normally |
-
 No plugins are required to use the base theme itself.
 
 ## Font
 
-To get that much closer to CoQ's UI use this theme with the Source Code Pro font.
+To get that much closer to CoQ's UI, install [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) and set it as your theme font.
 
-### Windows
+- **Windows:** unzip the download, select all `.ttf` files, right-click → **Install for all users**.
+- **Fedora:** `sudo dnf install adobe-source-code-pro-fonts`
+- **Arch:** `sudo pacman -S adobe-source-code-pro-fonts`
+- **Debian/Ubuntu:** no official package — unzip the Google Fonts download into `~/.local/share/fonts/` and run `fc-cache -f`.
 
-1. Download the family from [Google Fonts](https://fonts.google.com/specimen/Source+Code+Pro) and unzip it.
-2. Select all the `.ttf` files, right-click, and choose **Install for all users** (or just **Install**).
 
-### Linux
-
-- Fedora: `sudo dnf install adobe-source-code-pro-fonts`
-- Arch: `sudo pacman -S adobe-source-code-pro-fonts`
-- Debian/Ubuntu (no official package): download from [Google Fonts](https://fonts.google.com/specimen/Source+Code+Pro), unzip, then:
-  ```bash
-  mkdir -p ~/.local/share/fonts
-  cp *.ttf ~/.local/share/fonts/
-  fc-cache -f -v
-  ```
-
-## Install
+## Installation
 
 ### From Obsidian's community themes
+
+[Theme Listing](https://community.obsidian.md/themes/qudian)
 
 1. In Obsidian, go to **Settings → Appearance → Themes → Manage**.
 2. Search for **Qudian** and select **Install**.
